@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+article:nth-child(1) {
+    @apply bg-prim-violet
+}
+
+article:nth-child(2) {
+    @apply bg-prim-darkgrayblue
+}
+
+article:nth-child(3) {
+    @apply bg-prim-white
+}
+
+article:nth-child(4) {
+    @apply bg-prim-darkblackblue
+}
+
+article:nth-child(5) {
+    @apply bg-prim-white
+}
+
+img {
+    @apply w-[5%] rounded-full
+}
+
+h2 {
+    @apply text-sm font-semibold
+}
+
+h2+p {
+    @apply text-xs
+}
+
+h3 {
+    @apply text-2xl font-semibold
+}
+
+.heading {
+    @apply flex
+}
