@@ -1,10 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-import ArticleDaniel from './components/ArticleDaniel.vue';
-import ArticleJonathan from './components/ArticleJonathan.vue';
-import ArticleJeanetter from './components/ArticleJeanetter.vue';
-import ArticlePatrick from './components/ArticlePatrick.vue';
-import ArticleKira from './components/ArticleKira.vue';
+import UserTestimonial from './components/UserTestimonial.vue';
 
 const _isLoading = ref(true)
 const _data = ref([]);
@@ -27,11 +23,10 @@ onMounted(() => fetchData())
 <template>
   <h1 v-if="_isLoading">Loading testimonials...</h1>
   <main v-else class="w-10/12 grid grid-cols-1">
-    <ArticleDaniel :user-data="_data[0]" />
-    <ArticleJonathan :user-data="_data[1]" />
-    <ArticleJeanetter :user-data="_data[2]" />
-    <ArticlePatrick :user-data="_data[3]" />
-    <ArticleKira :user-data="_data[4]" />
+    <UserTestimonial v-for="{id,user_name, avatar_url,user_status,feedback_title, feedback_text} in _data"
+      :user_name="user_name" :user_status="user_status" :avatar_url="avatar_url" :feedback_title="feedback_title"
+      :feedback_text="feedback_text" :key="id" />
+
   </main>
 </template>
 
