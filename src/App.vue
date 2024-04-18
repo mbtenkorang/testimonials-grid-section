@@ -22,12 +22,13 @@ onMounted(() => fetchData())
 
 <template>
   <p v-if="_isLoading">Loading testimonials...</p>
-  <main v-else class="w-10/12 grid grid-cols-1">
-    <UserTestimonial v-for="{id,user_name, avatar_url,user_status,feedback_title,feedback_text} in _testimonialData"
-      :user_name="user_name" :user_status="user_status" :avatar_url="avatar_url" :feedback_title="feedback_title"
-      :feedback_text="feedback_text" :key="id" />
 
-  </main>
+  <UserTestimonial v-else
+    v-for="{id,user_name, avatar_url,user_status,feedback_title,feedback_text} in _testimonialData"
+    :user_name="user_name" :user_status="user_status" :avatar_url="avatar_url" :feedback_title="feedback_title"
+    :feedback_text="feedback_text" :key="id" />
+
+
 </template>
 
 <style scoped></style>
