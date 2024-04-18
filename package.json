@@ -3,6 +3,15 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "author": {
+    "name": "Moses Boakye-Tenkorang",
+    "email": "mbtenkorang@yahoo.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbtenkorang/testimonials-grid-section"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
