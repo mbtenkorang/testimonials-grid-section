@@ -24,7 +24,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <article>
+    <article class="container" :class="user_name.toLowerCase()">
         <div class="heading">
             <img :src="avatar_url" :alt="user_name">
             <div>
