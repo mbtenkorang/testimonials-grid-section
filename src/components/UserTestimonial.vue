@@ -25,21 +25,20 @@ const props = defineProps({
 
 <template>
     <article class="container" :class="user_name.toLowerCase()">
-        <div class="heading">
-            <img :src="avatar_url" :alt="user_name">
-            <div>
+        <div class="user-profile">
+            <img :src="avatar_url" :alt="user_name" class="avatar">
+            <div class="user-details">
                 <h2>{{ user_name }}</h2>
                 <p>{{ user_status }}</p>
             </div>
+        </div>
 
-        </div>
-        <div>
-            <h3>
-                {{ feedback_title }}
-            </h3>
-            <p>
-                "{{ feedback_text }}"
-            </p>
-        </div>
+        <p class="main-testimonial">
+            {{ feedback_title }}
+        </p>
+        <p class="quote">
+            " {{ feedback_text }} "
+        </p>
+
     </article>
 </template>
