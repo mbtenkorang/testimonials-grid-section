@@ -92,11 +92,12 @@ body {
 }
 
 main {
-    max-width: 92%;
+    width: 94%;
 }
 
 article {
     margin-block-end: 2rem;
+    /* max-width: 94%; */
 }
 
 .user-profile {
@@ -148,7 +149,7 @@ p.quote {
 
 
 .daniel.clifford {
-    background: 95% top / 38% no-repeat url("/assets/images/bg-pattern-quotation.svg") var(--moderateviolet);
+    background: 95% top / 35% 24% no-repeat url("/assets/images/bg-pattern-quotation.svg") var(--moderateviolet);
 
     h2,
     p {
