@@ -22,7 +22,7 @@ onMounted(() => fetchData())
 
 <template>
   <h1 class="hidden">Testimonials</h1>
-  <p v-if="_isLoading">Loading testimonials...</p>
+  <p v-if="_isLoading" class="loading">Loading testimonials...</p>
 
   <UserTestimonial v-else
     v-for="{id,user_name, avatar_url,user_status,feedback_title,feedback_text} in _testimonialData"
