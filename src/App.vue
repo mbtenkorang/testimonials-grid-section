@@ -21,6 +21,7 @@ onMounted(() => fetchData())
 </script>
 
 <template>
+  <h1 class="hidden">Testimonials</h1>
   <p v-if="_isLoading">Loading testimonials...</p>
 
   <UserTestimonial v-else
