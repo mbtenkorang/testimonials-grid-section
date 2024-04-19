@@ -11,6 +11,7 @@
     --lightgray: hsl(0, 0%, 81%);
     --lightgrayishblue: hsl(210, 46%, 95%);
 
+    /* FONTS */
     /* Utopia Type Scale */
     --fontsize-0: clamp(0.8125rem, 0.7465rem + 0.2817vi, 1rem);
     --fontsize-1: clamp(0.975rem, 0.8782rem + 0.4131vi, 1.25rem);
@@ -18,6 +19,12 @@
     --fontsize-3: clamp(1.404rem, 1.2106rem + 0.825vi, 1.9531rem);
     --fontsize-4: clamp(1.6848rem, 1.4184rem + 1.1367vi, 2.4414rem);
     --fontsize-5: clamp(2.0218rem, 1.6591rem + 1.5474vi, 3.0518rem);
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* CSS Resets */
@@ -31,6 +38,7 @@ html {
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
+
 }
 
 body,
@@ -47,6 +55,10 @@ p {
 body {
     min-height: 100vh;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1,
@@ -65,4 +77,129 @@ footer {
     font-size: .7rem;
 }
 
+
+.hidden {
+    display: none;
+}
+
 /* End Resets */
+
+/* Mobile Styling */
+body {
+    background-color: var(--lightgrayishblue);
+    padding-block-start: 5rem;
+    padding-block-end: 5rem;
+}
+
+main {
+    max-width: 92%;
+}
+
+article {
+    margin-block-end: 2rem;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-block-end: 1rem;
+}
+
+h2 {
+    font-size: var(--fontsize-2);
+    font-weight: 500;
+}
+
+h2+p {
+    font-size: var(--fontsize-1);
+    opacity: .5;
+    font-weight: 500;
+    text-wrap: balance;
+}
+
+img {
+    max-width: 20%;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-inline-end: 1rem;
+}
+
+p.main-testimonial {
+    font-size: var(--fontsize-4);
+    font-weight: 600;
+    line-height: 1.1;
+    margin-block-end: 1.25rem;
+}
+
+p.quote {
+    opacity: .7;
+    font-weight: 500;
+}
+
+.container {
+
+    border-radius: 1rem;
+    padding-block-start: 2rem;
+    padding-block-end: 2rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+}
+
+
+
+.daniel.clifford {
+    background: 95% top / 38% no-repeat url("/assets/images/bg-pattern-quotation.svg") var(--moderateviolet);
+
+    h2,
+    p {
+        color: var(--lightgray);
+    }
+
+    p.main-testimonial {
+        color: var(--white);
+    }
+
+    .avatar {
+        border: 2px solid var(--lightgray);
+    }
+}
+
+.jonathan.walters {
+    background: var(--darkgrayishblue);
+
+    h2,
+    p {
+        color: var(--white);
+    }
+}
+
+.jeanette.harmon {
+    background: var(--white);
+
+    h2,
+    p {
+        color: var(--darkgrayishblue);
+    }
+}
+
+.patrick.abrams {
+    background: var(--darkblackishblue);
+
+    h2,
+    p {
+        color: var(--white);
+    }
+
+    .avatar {
+        border: 2px solid var(--moderateviolet);
+    }
+}
+
+.kira.whittle {
+    background: var(--white);
+
+    h2,
+    p {
+        color: var(--darkgrayishblue);
+    }
+}
