@@ -87,8 +87,8 @@ footer {
 .loading {
     font-size: 1.5rem;
     text-align: center;
-    color: var(--lightgrayishblue);
-    font-weight: 600;
+    font-weight: 500;
+    color: var(--darkblackishblue);
 }
 
 body {
@@ -144,8 +144,7 @@ p.quote {
 }
 
 .container {
-
-    border-radius: 1rem;
+    border-radius: .5rem;
     padding-block-start: 2rem;
     padding-block-end: 2rem;
     padding-inline-start: 2rem;

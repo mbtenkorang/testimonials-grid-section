@@ -29,7 +29,4 @@ onMounted(() => fetchData())
     :user_name="user_name" :user_status="user_status" :avatar_url="avatar_url" :feedback_title="feedback_title"
     :feedback_text="feedback_text" :key="id" />
 
-
 </template>
-
-<style scoped></style>
