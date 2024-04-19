@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Testimonial Grid Section Repo](https://github.com/mbtenkorang/testimonials-grid-section)
-- Live Site URL: [Testionials Grid Website](https://testimonials-grid.onrender.com)
+- Live Site URL: [Testionials Grid Website](https://testimonials-grid-fem.onrender.com/)
 
 ## My process
 
